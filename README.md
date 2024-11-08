@@ -1,8 +1,9 @@
+```html
 <div align="center">
 
 # 🏢 Ark Contábil
 
-### A modern web application for accounting services built with React and TypeScript
+### Uma aplicação web moderna para serviços contábeis construída com React e TypeScript
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -11,26 +12,27 @@
 
 </div>
 
-## ✨ Overview
+## ✨ Visão Geral
 
-Ark Contábil offers a user-friendly interface for financial import controls.
+Ark Contábil oferece uma interface amigável para controles de importação financeira.
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- 🔐 User Authentication
-- 📱 Responsive Design
-- 🎨 Clean UI/UX
+- 🔐 Autenticação de Usuário
+- 📱 Design Responsivo
+- 🎨 UI/UX Limpa
 
-## 🛠️ Getting Started
+## 🛠️ Começando
 
-1. **Clone the repository**  
-   `git clone https://github.com/yourusername/ark-contabil.git`
+1. **Clone o repositório**  
+   `git clone https://github.com/seuusuario/ark-contabil.git`
 
-2. **Navigate to project directory**  
+2. **Navegue até o diretório do projeto**  
    `cd ark-contabil`
 
-3. **Install dependencies**  
+3. **Instale as dependências**  
    `npm install`
 
-4. **Start development server**  
+4. **Inicie o servidor de desenvolvimento**  
    `npm run dev`
+```
