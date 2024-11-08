@@ -1,5 +1,8 @@
 import { User } from "../types/user";
 
+/**
+ * Represents a collection of errors, where the keys are the field names and the values are the error messages.
+ */
 type Error = {
     [key: string]: string;
 }
@@ -7,16 +10,12 @@ type Error = {
 export const validade = (data: User) => {
     const errors: Error = {};
 
-    if(!data.name) {
-        errors['name'] = "O nome é obrigatório!"
+    if(!data.login) {
+        errors['login'] = "O usuário ou email é obrigatório!"
     }
 
-    if(!data.email) {
-        errors['email'] = "O e-mail é obrigatório!"
-    }
-
-    if(!data.agree) {
-        errors['agree'] = "É necessário concordar com os termos!"
+    if(!data.password) {
+        errors['password'] = "A senha é obrigatória!"
     }
     return errors;
 }

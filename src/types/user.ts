@@ -1,5 +1,7 @@
+/**
+ * Represents a user with a login and password.
+ */
 export type User = {
-    name?: string;
-    email?: string;
-    agree?: boolean | string;
+    login?: string;
+    password?: string;
 }
