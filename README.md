@@ -13,7 +13,7 @@
 
 ## ✨ Overview
 
-Ark Contábil provides a user-friendly interface for accounting services with a secure authentication system.
+Ark Contábil offers a user-friendly interface for financial import controls.
 
 ## 🚀 Features
 
@@ -36,4 +36,6 @@ Ark Contábil provides a user-friendly interface for accounting services with a 
    `npm run dev`
 
 ## 📁 Project Structure
+
+src/ ├── assets/ # Static assets │ └── login-image.jpg ├── components/ # React components │ └── Login.tsx ├── App.tsx # Main application component └── App.css # Global styles
 
