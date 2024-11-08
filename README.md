@@ -19,28 +19,21 @@ Ark Contábil provides a user-friendly interface for accounting services with a 
 
 - 🔐 User Authentication
 - 📱 Responsive Design
-- 📲 Mobile-First Approach
 - 🎨 Clean UI/UX
 
 ## 🛠️ Getting Started
 
-1. **Clone the repository**
-  git clone https://github.com/yourusername/ark-contabil.git
+1. **Clone the repository**  
+   `git clone https://github.com/yourusername/ark-contabil.git`
 
-2. **Navigate to project directory**
-  cd ark-contabil
+2. **Navigate to project directory**  
+   `cd ark-contabil`
 
-3. **Install dependencies**
-  npm install
+3. **Install dependencies**  
+   `npm install`
 
-4. **Start development server**
-  npm run dev
+4. **Start development server**  
+   `npm run dev`
 
-📁 Project Structure
-src/
-├── assets/          # Static assets
-│   └── login-image.jpg
-├── components/      # React components
-│   └── Login.tsx
-├── App.tsx         # Main application component
-└── App.css         # Global styles
+## 📁 Project Structure
+
