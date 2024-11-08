@@ -1,4 +1,3 @@
-```html
 <div align="center">
 
 # 🏢 Ark Contábil
@@ -35,4 +34,3 @@ Ark Contábil oferece uma interface amigável para controles de importação fin
 
 4. **Inicie o servidor de desenvolvimento**  
    `npm run dev`
-```
