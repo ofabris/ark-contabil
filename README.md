@@ -24,7 +24,7 @@ Ark Contábil oferece uma interface amigável para controles de importação fin
 ## 🛠️ Começando
 
 1. **Clone o repositório**  
-   `git clone https://github.com/ofabris/ark-contabil`
+   `git clone https://github.com/ofabris/ark-contabil.git`
 
 2. **Navegue até o diretório do projeto**  
    `cd ark-contabil`
