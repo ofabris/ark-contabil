@@ -37,10 +37,10 @@ Ark Contábil offers a user-friendly interface for financial import controls.
 
 ## 📁 Project Structure
 
-`src/
- ├── assets/          # Static assets
- │   └── login-image.jpg
- ├── components/      # React components
- │   └── Login.tsx
- ├── App.tsx         # Main application component
- └── App.css         # Global styles`
+```src/```
+``` ├── assets/          # Static assets```
+``` │   └── login-image.jpg```
+``` ├── components/      # React components```
+``` │   └── Login.tsx```
+``` ├── App.tsx         # Main application component```
+```└── App.css         # Global styles```
