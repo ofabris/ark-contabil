@@ -3,7 +3,6 @@ import { User } from "../types/user";
 import { validade } from "../utils/validate";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from "./Footer";
 
 /**
  * Renders a login form component with input fields for username/email and password, and a submit button.
