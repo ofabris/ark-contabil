@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Cadastro = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -100,29 +101,52 @@ const Cadastro = () => {
           </div>
         </div>
       </nav>
-
-      <h1 className="text-2xl font-bold text-center mb-6">Cadastro</h1>
+      <h1 className="text-2xl font-bold text-left mb-6 mt-20">Cadastro</h1>
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-3 gap-4 mb-6">
-          <div>
+          <div className="col-span-1">
             <label htmlFor="codigo" className="block">Código</label>
             <input
               type="text"
               id="codigo"
               value={formData.codigo}
               onChange={(e) => handleChange(e, "codigo")}
-              className="input-field"
+              className="input-field w-20"
               maxLength={8}
             />
           </div>
-          <div>
+          <div className="col-span-2">
             <label htmlFor="nome" className="block">Nome</label>
             <input
               type="text"
               id="nome"
               value={formData.nome}
               onChange={(e) => handleChange(e, "nome")}
-              className="input-field"
+              className="input-field w-full"
+            />
+          </div>
+          <div className="col-span-1">
+            <label htmlFor="cnpj" className="block">CNPJ</label>
+            <input
+              type="text"
+              id="cnpj"
+              value={formData.cnpj}
+              onChange={(e) => handleChange(e, "cnpj")}
+              className="input-field w-60"
+              maxLength={18}
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="col-span-1">
+            <label htmlFor="dataEntrada" className="block">Data de Entrada</label>
+            <input
+              type="text"
+              id="dataEntrada"
+              value={formData.dataEntrada}
+              onChange={formatDataEntrada}
+              className="input-field w-full"
+              placeholder="MM/YYYY"
             />
           </div>
           <div>
@@ -131,7 +155,7 @@ const Cadastro = () => {
               id="regime"
               value={formData.regime}
               onChange={(e) => handleSelectChange(e, "regime")}
-              className="input-field"
+              className="input-field w-full"
             >
               <option value="">Selecione</option>
               <option value="SIMPLES">Simples Nacional</option>
@@ -140,41 +164,15 @@ const Cadastro = () => {
             </select>
           </div>
         </div>
-
-        <div className="mb-6">
-          <label htmlFor="cnpj" className="block">CNPJ</label>
-          <input
-            type="text"
-            id="cnpj"
-            value={formData.cnpj}
-            onChange={(e) => handleChange(e, "cnpj")}
-            className="input-field"
-            maxLength={18}
-          />
-        </div>
-
-        <div className="mb-6">
-          <label htmlFor="dataEntrada" className="block">Data de Entrada</label>
-          <input
-            type="text"
-            id="dataEntrada"
-            value={formData.dataEntrada}
-            onChange={formatDataEntrada}
-            className="input-field"
-            placeholder="MM/YYYY"
-          />
-        </div>
-
         <div className="mb-6">
           <label htmlFor="observacao" className="block">Observação</label>
           <textarea
             id="observacao"
             value={formData.observacao}
             onChange={(e) => handleChange(e, "observacao")}
-            className="input-field"
+            className="input-field w-full"
           />
         </div>
-
         <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded">
           Enviar
         </button>
