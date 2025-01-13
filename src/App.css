@@ -2,60 +2,23 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
+html, body{
   font-family: 'Inter', sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
-.bg-custom-blue {
-  background-color: rgb(17, 73, 207);
+.page-container {
+  padding: 1rem;
 }
 
-.bg-custom-blue-light {
-  background-color: rgb(229, 229, 229);
-}
-
-.text-custom-blue-dark {
-  color: rgb(17, 73, 207);
-}
-
-.shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.hover\:underline:hover {
-  text-decoration: underline;
-}
-
-.font-bold {
+.page-title {
+  font-size: 2rem;
   font-weight: bold;
-}
-
-.home-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url('/images/A_modern_and_clean_office_environment_with_profess.png'); /* Caminho para a imagem */
-  background-size: cover; /* A imagem deve cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  background-attachment: fixed; /* Mantém a imagem fixa enquanto a página rola */
-  position: relative; /* Necessário para o conteúdo ficar sobre a imagem */
-}
-
-.home-content {
-  flex-grow: 1;
-  padding: 20px;
-  overflow-y: auto;
-  position: relative; /* Permite o conteúdo ficar sobre a imagem */
-  z-index: 1; /* Garante que o conteúdo fique sobre a imagem */
-  color: white; /* Garante que o texto seja legível */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra para melhorar a legibilidade */
+  text-align: left;
+  margin: 5rem 0 1.5rem;
 }
 
 .navbar {
@@ -67,75 +30,177 @@ body {
   color: #1D4ED8;
   z-index: 10;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .nav-links {
   display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
 }
 
-.navbar .nav-link {
-  color: #1D4ED8;
-  font-size: 16px;
+.navbar-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-  background-color: rgba(29, 78, 216, 0.1);
   color: #1D4ED8;
+  cursor: pointer;
 }
 
-.navbar .menu-icon {
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  color: #1D4ED8;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  background: transparent;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: rgba(29, 78, 216, 0.1);
+}
+
+.menu-icon {
   display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .navbar .nav-links {
+  .navbar-links {
     display: none;
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
 
-  .navbar .menu-icon {
-    display: block;
-  }
-
-  .navbar.open .nav-links {
+  .navbar.open .navbar-links {
     display: flex;
   }
 
-  .navbar .nav-link {
-    padding: 15px;
+  .menu-icon {
+    display: block;
   }
 }
 
-.input-field {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  font-size: 16px;
-  margin-top: 2px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-textarea {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  font-size: 16px;
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-select {
-  padding: 8px 12px;
+.form-label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.375rem;
+  font-size: 1rem;
   width: 100%;
-  font-size: 16px;
+}
+
+.form-button {
+  background-color: #1D4ED8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #2563EB;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem;
+  max-width: 64rem;
+  box-shadow: 0 0 20px 3px #1D4ED8;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.login-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.image-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1149CF;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  background-color: #E5E5E5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #1149CF;
+}
+
+.footer-link {
+  font-weight: bold;
+  color: #1149CF;
+  text-decoration: underline;
 }
